@@ -15,7 +15,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "driver.h"
 
 
 void in_first(const char arg[], Node *bef, Node *cur, Node *new, Fs_sim *files);
@@ -805,7 +804,7 @@ void path (Fs_sim *files) {
 /*----------------------------------------------------------------------------*/
 /*helper method that will recursively search for the parent directories and 
   print them out*/
-void path_aux(Fs_sim *files, Node *start){
+void path_aux(Fs_sim *files, Node *start) {
 
   if(files != NULL && start != NULL){
     if(start == files -> root){
